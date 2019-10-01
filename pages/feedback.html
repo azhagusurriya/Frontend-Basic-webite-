@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--load all styles -->
+    <meta charset="utf-8">
+    <!--1-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lebron James</title>
+    <link rel="shortcut icon" href="../images/lebronaside1.png">
+    <link rel="stylesheet" href="../styles/normalize.css">
+
+    <link rel="stylesheet" href="../styles/feedback.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <!--2-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="font awesome/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script> -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#nav_menu').slicknav({
+                prependTo: "#mobile_menu"
+            });
+        });
+    </script>
+    <script>
+        function myFunction() {
+            alert("Registration is Successfully Completed");
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="header_container">
+            <img src='../images/lebronicon.png' alt='Lebron James Logo' height='150'>
+        </div>
+        <div class="header_container">
+            <hgroup>
+                <h1><a title="Home" href="../index.html" class="current">LeBron Raymone James</a></h1>
+                <h3>Fan Page / Feedback</h3>
+            </hgroup>
+        </div>
+    </header>
+    <nav id="nav_menu">
+        <ul>
+            <li><a title="Home" href="../index.html" class="current">Home</a></li>
+            <li><a title="Stats" href="../pages/table.html">Stats</a></li>
+            <li><a title="Gallery" href="../pages/gallery.html">Gallery</a></li>
+            <li class="has-children"><a title="Teams" href="../pages/teams.html">Teams
+            <span class="arrow arrow-down"></span>
+            </a>
+                <ul>
+                    <li><a title="Cleveland page" href="https://www.nba.com/cavaliers/" target="_blank">Cleveland</a></li>
+                    <li><a title="heat page" href="https://www.nba.com/heat/" target="_blank">Miami Heat</a></li>
+                    <li class="has-children"><a title="lakers page" href="https://www.nba.com/lakers/" target="_blank">LA Lakers
+                        <span class="arrow arrow-down arrow-right"></span>
+                    </a>
+                        <ul>
+                            <li><a title="Teammates" href="https://www.nba.com/lakers/roster?ls=nav_extended_team" target="_blank">Teammates</a></li>
+                            <li><a title="Contract" href="../pages/Stats.html" target="_blank">Contract</a></li>
+                            <li><a title="Schedule" href="https://www.nba.com/lakers/schedule?ls=nav_schedule" target="_blank">Schedule</a></li>
+                            <li><a title="Tickets" href="https://www.nba.com/lakers/tickets?ls=nav_tickets" target="_blank">Tickets</a></li>
+                        </ul>
+                    </li>
+                    <li><a title="St.Mary school page" href="https://en.wikipedia.org/wiki/St._Vincent%E2%80%93St._Mary_High_School#Notable_alumni" target="_blank">St.Mary Scool</a></li>
+                </ul>
+            </li>
+            <li><a title="Fan Registration Page" href="../pages/feedback.html"> Become a fan</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <aside id=aside_left>
+            <h2>Navigation</h2>
+            <!--5-->
+            <div id="aside_info">
+                <div class="nav_container">
+                    <h3>
+                        <a title="Home" href="../index.html">Home</a>
+                    </h3>
+                    <a title="Home" href="../index.html"><img src="../images/lebrongif1.gif" alt="image description" title="Lebron James" width="150" height="110"></a>
+                </div>
+                <div class="nav_container">
+                    <h3>
+                        <a title="Stats" href="../pages/table.html">Stats</a>
+                    </h3>
+                    <a title="Stats" href="../pages/table.html"><img src="../images/lebrongif2.gif" alt="image description" title="Lebron James" width="150" height="110"></a>
+                </div>
+                <div class="nav_container">
+                    <h3>
+                        <a title="Gallery" href="../pages/gallery.html">Gallery</a>
+                    </h3>
+                    <a title="Gallery" href="../pages/gallery.html"><img src="../images/lebrongif3.gif" alt="image description" title="Lebron James" width="150" height="110"></a>
+                </div>
+                <div class="nav_container">
+                    <h3>
+                        <a title="Teams" href="../pages/teams.html">Teams</a>
+                    </h3>
+                    <a title="Teams" href="../pages/teams.html"><img src="../images/lebrongif4.gif" alt="image description" title="Lebron James" width="150" height="110"></a>
+                </div>
+                <div class="nav_container">
+                    <h3>
+                        <a title="Feedback" href="../pages/feedback.html">Become a fan</a>
+                    </h3>
+                    <a title="Feedback" href="../pages/feedback.html"><img src="../images/lebrongif5.gif" alt="image description" title="Lebron James" width="150" height="110"></a>
+                </div>
+            </div>
+        </aside>
+        <section id="main_content">
+            <article class="main_form">
+                <h1 class="form_heading">Fan Registration</h1>
+                <form action="../pages/register_fan.html" method="get" name="registration_form" id="registration_form">
+                    <fieldset>
+                        <legend>Fan Information</legend>
+                        <label for="email">E-Mail:</label>
+                        <input type="email" name="email" id="email" autofocus required tabindex="1"><br>
+                        <label for="first_name">First Name:</label>
+                        <input type="text" name="first_name" id="first_name" required tabindex="1"><br>
+                        <label for="last_name">Last Name:</label>
+                        <input tabindex="1" type="text" name="last_name" id="last_name" required><br>
+                        <label for="address">Address:</label>
+                        <input tabindex="1" type="text" name="address" id="address"><br>
+                        <label for="city">City:</label>
+                        <input tabindex="1" type="text" name="city" id="city" required><br>
+                        <label for="state">State:</label>
+                        <input tabindex="1" type="text" name="state" id="state" required maxlength="2" placeholder="2-character code"><br>
+                        <label for="zip">ZIP Code:</label>
+                        <input tabindex="1" type="text" name="zip" id="zip" required placeholder="5 or 9 digits" pattern="^\d{5}(-\d{4})?$" title="Either 5 or 9 digits"><br>
+                        <label for="phone">Phone Number:</label>
+                        <input tabindex="1" type="tel" name="phone" id="phone" required placeholder="999-999-9999" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-9999 format"><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Favourite Lebron Moment</legend>
+                        <!-- <label for="comment">Favourite Lebron Moment:</label> -->
+                        <textarea tabindex="1" rows="7" cols="50" name="comment" id="comment" placeholder="Type here .." required title="Please fill out this field"></textarea>
+                    </fieldset>
+                    <fieldset id="membership_type">
+                        <legend>Membership Option</legend>
+                        <input tabindex="1" type="radio" name="membership_type" id="membership_type1" value="yearly" required checked>
+                        <label for="membership_type1">Yearly</label>
+                        <input tabindex="1" type="radio" name="membership_type" id="membership_type2" value="monthly">
+                        <label for="membership_type2">Monthly</label>
+                        <input tabindex="1" type="radio" name="membership_type" id="membership_type3" value="weekly">
+                        <label for="membership_type3">Weekly</label>
+                        <input tabindex="1" type="radio" name="membership_type" id="membership_type4" value="day">
+                        <label for="membership_type4">One day</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Payment</legend>
+                        <br>
+                        <label for="card_type">Card Type:</label>
+                        <select tabindex="1" name="card_type" id="card_type" required>
+                        <optgroup label="Visa">
+                        <option value="cv">Credit Card</option>
+				    	<option value="cd">Debit Card</option>            
+                        <option value="cp">Premium Card</option>
+                        </optgroup>
+                        <optgroup label="Master Card">
+                          <option value="mc">Credit Card</option>
+				    	<option value="md">Debit Card</option>            
+                        <option value="mp">Premium Card</option>
+                        </optgroup>
+                         <optgroup label="Mastero">
+                          <option value="oc">Credit Card</option>
+				    	<option value="od">Debit Card</option>            
+                        <option value="op">Premium Card</option>
+                        </optgroup>
+					</select><br>
+                        <label for="card_number">Card Number:</label>
+                        <input tabindex="1" type="number" name="card_number" id="card_number" required placeholder="16 digits" pattern="^\d{16}$" title="Must be 16 digits"><br>
+                        <label for="expiration_month">Expiration Date:</label>
+                        <select tabindex="1" name="expiration_month" id="expiration_month" required>
+				    	<option value="ja">January</option>
+				    	<option value="f">February</option>            
+						<option value="mr">March</option>
+						<option value="a">April</option>
+						<option value="my">May</option>
+						<option value="jn">June</option>
+						<option value="ju">July</option>
+						<option value="a">August</option>
+						<option value="s">Spetember</option>
+						<option value="o">October</option>
+						<option value="n">November</option>
+						<option value="d">December</option>
+					</select>
+                        <select tabindex="1" name="expiration_year" id="expiration_year" required>
+				    	<option value="year17">2017</option>
+				    	<option value="year18">2018</option>            
+						<option value="year19">2019</option>
+						<option value="year20">2020</option>
+						<option value="year21">2021</option>	
+                    </select><br>
+                        <label for="choose_option">Choose right options:</label>
+                        <select tabindex="1" name="choose_option" id="choose_option" multiple="multiple" size="3" required>
+				    	<option value="a">1+2 = 3</option>
+				    	<option value="b">4-3 = 2</option>            
+                        <option value="c">3+8 = 11</option>
+                        <option value="d">9+8 = 1</option>
+                        <option value="e">8-5 = 3</option>
+                        <option value="f">2+0 = 2</option>
+                        <option value="g">1-1 = 1</option>
+					</select><br>
+                    </fieldset>
+                    <fieldset id="buttons">
+                        <legend>Submit Your Order</legend>
+                        <label>&nbsp;</label>
+                        <input tabindex="1" type="submit" id="submit" value="Submit" onclick="myFunction()">
+                        <input tabindex="1" type="submit" id="register" value="Register">
+                        <input tabindex="1" type="reset" id="reset" value="Reset"><br><br>
+                    </fieldset>
+                </form>
+                <br>
+            </article>
+        </section>
+        <aside id="aside_tweet">
+            <div id="aside_social">
+                <h2>Social Media</h2>
+                <ul>
+                    <li class="social_img"><img src="../images/lebronaside1.jpg" alt="image description" title="Lebron James" width="30" height="30"><a href="https://www.facebook.com/LeBron/" target="_blank" title="Facebook">Facebook</a>
+                    </li>
+                    <li><img src="../images/lebronaside2.jpg" alt="image description" title="Lebron James" width="30" height="30"><a href="https://www.instagram.com/kingjames/?hl=en" target="_blank" title="Instagram">Instagram</a></li>
+                    <li><img src="../images/lebronaside3.jpg" alt="image description" title="Lebron James" width="30" height="30"><a href="https://en.wikipedia.org/wiki/LeBron_James" target="_blank" title="Wikipedia">Wikipedia</a></li>
+                    <li><img src="../images/lebronaside4.jpg" alt="image description" title="Lebron James" width="30" height="30"><a href="http://www.lebronjames.com/" target="_blank" title="website">Website</a></li>
+                </ul>
+            </div>
+            <div id="aside_feedbackform">
+                <form action="../pages/register_feedback.html" method="get" name="feedback_form" id="feedback_form">
+                    <h2 class="form_heading">Website Feedback</h2>
+                    <fieldset id="positive_attributes">
+                        <legend>Positive Attributes</legend>
+                        <input tabindex="1" type="checkbox" name="attribute1" id="attribute1" value="Fun">
+                        <label for="attribute1">Fun to visit</label> <br>
+                        <input tabindex="1" type="checkbox" name="attribute2" id="attribute2" value="Design">
+                        <label for="attribute2">Well Designed</label> <br>
+                        <input tabindex="1" type="checkbox" name="attribute3" id="attribute3" value="Colors">
+                        <label for="attribute3">Used Good colors</label> <br>
+                        <input tabindex="1" type="checkbox" name="attribute4" id="attribute4" value="Conent">
+                        <label for="attribute4">Good Content</label> <br>
+                        <input tabindex="1" type="checkbox" name="attribute5" id="attribute5" value="Info">
+                        <label for="attribute5">Valuable Information</label> <br>
+                    </fieldset>
+                    <fieldset id="visit_again">
+                        <legend>Visit Again</legend>
+                        <input tabindex="1" type="radio" name="visit_again" id="visit_again1" value="yes" required checked>
+                        <label for="visit_again1">Yes</label>
+                        <input tabindex="1" type="radio" name="visit_again" id="visit_again2" value="no">
+                        <label for="visit_again2">No</label>
+                    </fieldset>
+
+                    <fieldset id="feedback_button">
+                        <legend>Submit Your Feedback</legend>
+                        <input tabindex="1" type="submit" id="feedback_submit" value="Submit">
+                        <input tabindex="1" type="reset" id="feedback_reset" value="Reset">
+                    </fieldset>
+                    <br>
+                </form>
+            </div>
+        </aside>
+
+        <aside id="mobile_tweet">
+            <div id="aside_social">
+                <h2>Social Media</h2>
+                <ul>
+                    <li class="social_img"><img src="../images/lebronaside1.jpg" alt="image description" title="Lebron James" width="30" height="30"><a href="https://www.facebook.com/LeBron/" title="Facebook">Facebook</a>
+                    </li>
+                    <li><img src="../images/lebronaside2.jpg" alt="image description" title="Lebron James" width="30" height="30"><a href="https://www.instagram.com/kingjames/?hl=en" title="Instagram">Instagram</a></li>
+                    <li><img src="../images/lebronaside3.jpg" alt="image description" title="Lebron James" width="30" height="30"><a href="https://en.wikipedia.org/wiki/LeBron_James" target="_blank" title="Wikipedia">Wikipedia</a></li>
+                    <li><img src="../images/lebronaside4.jpg" alt="image description" title="Lebron James" width="30" height="30"><a href="http://www.lebronjames.com/" title="website">Website</a></li>
+                </ul>
+            </div>
+            <div id="aside_feedbackform">
+                <form action="../pages/register_feedback.html" method="get" name="feedback_form" id="feedback_form" tabindex="1">
+                    <h2 class="form_heading">Website Feedback</h2>
+                    <fieldset id="positive_attributes">
+                        <legend>Positive Attributes</legend>
+                        <input type="checkbox" name="attribute1" id="attribute1" value="Fun">
+                        <label for="attribute1">Fun to visit</label> <br>
+                        <input type="checkbox" name="attribute2" id="attribute2" value="Design">
+                        <label for="attribute2">Well Designed</label> <br>
+                        <input type="checkbox" name="attribute3" id="attribute3" value="Colors">
+                        <label for="attribute3">Used Good colors</label> <br>
+                        <input type="checkbox" name="attribute4" id="attribute4" value="Conent">
+                        <label for="attribute4">Good Content</label> <br>
+                        <input type="checkbox" name="attribute5" id="attribute5" value="Info">
+                        <label for="attribute5">Valuable Information</label> <br>
+                    </fieldset>
+                    <fieldset id="visit_again">
+                        <legend>Visit Again</legend>
+                        <input type="radio" name="visit_again" id="visit_again1" value="yes" checked>
+                        <label for="visit_again1">Yes</label>
+                        <input type="radio" name="visit_again" id="visit_again2" value="no">
+                        <label for="visit_again2">No</label>
+                    </fieldset>
+
+                    <fieldset id="feedback_button">
+                        <legend>Submit Your Feedback</legend>
+                        <input type="submit" id="feedback_submit" value="Submit">
+                        <input type="reset" id="feedback_reset" value="Reset">
+                    </fieldset>
+                    <br>
+                </form>
+            </div>
+        </aside>
+
+        <aside id="tab_tweet">
+            <div id="aside_social">
+                <h2>Social Media</h2>
+                <ul>
+                    <li class="social_img"><img src="../images/lebronaside1.jpg" alt="image description" title="Lebron James" width="30" height="30"><a href="https://www.facebook.com/LeBron/" title="Facebook">Facebook</a>
+                    </li>
+                    <li><img src="../images/lebronaside2.jpg" alt="image description" title="Lebron James" width="30" height="30"><a href="https://www.instagram.com/kingjames/?hl=en" title="Instagram">Instagram</a></li>
+                    <li><img src="../images/lebronaside3.jpg" alt="image description" title="Lebron James" width="30" height="30"><a href="https://en.wikipedia.org/wiki/LeBron_James" target="_blank" title="Wikipedia">Wikipedia</a></li>
+                    <li><img src="../images/lebronaside4.jpg" alt="image description" title="Lebron James" width="30" height="30"><a href="http://www.lebronjames.com/" title="website">Website</a></li>
+                </ul>
+            </div>
+            <div id="aside_feedbackform">
+                <form action="../pages/register_feedback.html" method="get" name="feedback_form" id="feedback_form" tabindex="1">
+                    <h2 class="form_heading">Website Feedback</h2>
+                    <fieldset id="positive_attributes">
+                        <legend>Positive Attributes</legend>
+                        <input type="checkbox" name="attribute1" id="attribute1" value="Fun">
+                        <label for="attribute1">Fun to visit</label> <br>
+                        <input type="checkbox" name="attribute2" id="attribute2" value="Design">
+                        <label for="attribute2">Well Designed</label> <br>
+                        <input type="checkbox" name="attribute3" id="attribute3" value="Colors">
+                        <label for="attribute3">Used Good colors</label> <br>
+                        <input type="checkbox" name="attribute4" id="attribute4" value="Conent">
+                        <label for="attribute4">Good Content</label> <br>
+                        <input type="checkbox" name="attribute5" id="attribute5" value="Info">
+                        <label for="attribute5">Valuable Information</label> <br>
+                    </fieldset>
+                    <fieldset id="visit_again">
+                        <legend>Visit Again</legend>
+                        <input type="radio" name="visit_again" id="visit_again1" value="yes" checked>
+                        <label for="visit_again1">Yes</label>
+                        <input type="radio" name="visit_again" id="visit_again2" value="no">
+                        <label for="visit_again2">No</label>
+                    </fieldset>
+
+                    <fieldset id="feedback_button">
+                        <legend>Submit Your Feedback</legend>
+                        <input type="submit" id="feedback_submit" value="Submit">
+                        <input type="reset" id="feedback_reset" value="Reset">
+                    </fieldset>
+                    <br>
+                </form>
+            </div>
+
+        </aside>
+    </main>
+    <footer>
+        <p>&copy 2019, Lebron James Fan Website, Los Angeles, CA 11234</p>
+    </footer>
+</body>
